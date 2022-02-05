@@ -65,7 +65,7 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="main-button">Заказать услугу</button>
+          <button type="button" class="main-button" data-modal-open >Заказать услугу</button>
         </div>
       </section>
 
@@ -132,14 +132,23 @@
           <h2 class="second-header">Чем мы занимаемся</h2>
 
           <ul class="list list-flex work-list">
-            <li class="">
+            <li class="work-list-item">
+              <div class="work-list-container">
               <img src="./images/img.jpg" alt="photo" width="370" />
+              <p class="img-description"> Десктопные приложения</p>
+            </div>
             </li>
-            <li class="">
+            <li class="work-list-item">
+               <div class="work-list-container">
               <img src="./images/box2.jpg" alt="photo" width="370" />
+              <p class="img-description">Мобильные приложения</p>
+            </div>
             </li>
-            <li class="">
+            <li class="work-list-item">
+              <div class="work-list-container">
               <img src="./images/box3.jpg" alt="photo" width="370" />
+              <p class="img-description">Дизайнерские решения</p>
+            </div>
             </li>
           </ul>
         </div>
@@ -377,6 +386,7 @@
           </ul>
         </div>
       </section>
+    </main>
       <footer class="basement">
         <div class="container footer-flex-container">
           <div class="footer-container">
@@ -387,13 +397,13 @@
             <address class="location">г. Киев, пр-т Леси Украинки, 26</address>
             <ul class="contacts list">
               <li class="footer-items">
-                <a href="mailto:info@devstudio.com" class="footer-link"
+                <a href="mailto:info@devstudio.com" class="footer-link link"
                   >info@devstudio.com</a
                 >
               </li>
 
               <li class="footer-items">
-                <a href="tel:+380961111111" class="footer-link"
+                <a href="tel:+380961111111" class="footer-link link"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -434,6 +444,13 @@
           </div>
         </div>
       </footer>
-    </main>
+      <div class="backdrop is-hidden" data-modal>
+        
+        <div class="modal"><button class="close-btn" data-modal-close > <svg class="btn-close-icon" width="11px" height="11px" >
+          <use href="images/symbol-defs.svg#icon-vector-x"></use>
+        </svg> </button></div>
+      </div>
+    <script src="./js/modal.js"></script>
+   
   </body>
 </html>
