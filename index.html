@@ -448,8 +448,51 @@
         
         <div class="modal"><button class="close-btn" data-modal-close > <svg class="btn-close-icon" width="11px" height="11px" >
           <use href="images/symbol-defs.svg#icon-vector-x"></use>
-        </svg> </button></div>
-      </div>
+        </svg> </button>
+        <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
+<form >
+  <label for="user-name" class="user-label"   >Имя</label>
+  <div class="form-container">
+    <svg width="18px" height="18px">
+      <use href="./images/symbol-defs.svg#icon-person-black-18dp"> </use>
+    </svg>
+  <input type="text" id="user-name" class="user-data" name="user-name" >
+
+</div>
+ <label for="tel" class="user-label"   >Телефон</label>
+  <div class="form-container">
+    <svg width="18px" height="18px">
+      <use href="./images/symbol-defs.svg#icon-phone-black-18dp"> </use>
+    </svg>
+  <input type="text" id="tel" class="user-data" name="user-tel" >
+
+
+</div>
+ <label for="mail" class="user-label"   >Почта</label>
+  <div class="form-container">
+    <svg width="18px" height="18px">
+      <use href="./images/symbol-defs.svg#icon-email-black-18dp"> </use>
+    </svg>
+  <input type="text" id="mail" class="user-data" name="user-mail" >
+
+</div>
+<label for="text-area" class="text-area-label">Комментарий</label>
+<div class="text-area-container" >
+<textarea name="modal-textarea" id="text-area" class="text-area-modal"></textarea>
+</div>
+<div class="check-container" >
+  <label for="checkbox" class="check-label">
+     <span>
+     
+  </span> Соглашаюсь с рассылкой и принимаю <a href="" class="contract">Условия договора</a> </label>
+<input type="checkbox" id="checkbox" name="check" class="modal-check">
+</div>
+<div class="button-container">
+<button type="submit" class="submit-button">Отправить</button></div>
+</form>
+
+
+    
     <script src="./js/modal.js"></script>
    
   </body>
